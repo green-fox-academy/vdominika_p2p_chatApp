@@ -7,7 +7,7 @@ import javax.persistence.Id;
 
 
 @Entity
-public class PeerToPeerModel {
+public class Log {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -15,10 +15,10 @@ public class PeerToPeerModel {
 
     String message;
 
-    public PeerToPeerModel() {
+    public Log() {
     }
 
-    public PeerToPeerModel(String message) {
+    public Log(String message) {
 
         this.message = message;
     }
